@@ -44,16 +44,19 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <a href="/cashier_dash">Dashboard</a>
                             </div>
-                            <div class="col-md-3">
-                                <button class="btn" onclick="window.location.href='/cashier_obtain_loan'" >Obtain a Loan</button>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/cashier_payment'">Payment</button>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/cashier_obtain_loan'" >Apply Loan</button>
+                            </div>
+                            <div class="col-md-2">
                                 <button class="btn btn-info" onclick="window.location.href='/cashier_view_customers'" disabled>Customers</button>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/cashier_view_guarantors'">Guarantors</button>
                             </div>
                         </div>

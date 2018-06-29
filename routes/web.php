@@ -23,11 +23,13 @@ Route::get('/admin_dash','AdminController@viewAdminDash');
 
 //Manager Controller
 Route::get('/manager_dash','ManagerController@viewDash');
+
 //Cashier controller
 Route::get('/cashier_dash','CashierController@viewDash');
 Route::get('/cashier_obtain_loan','CashierController@viewLoanObtainForm');
 Route::get('/cashier_view_customers','CashierController@viewCustomers');
 Route::get('/cashier_view_guarantors','CashierController@viewGuarantors');
+Route::get('/cashier_payment','CashierController@viewPayment');
 
 //Other
 Route::get('/blocked',function (){

@@ -11,10 +11,10 @@
                                 <a href="/cashier_dash">Dashboard</a>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/cashier_payment'">Payment</button>
+                                <button class="btn btn-info" onclick="window.location.href='/cashier_payment'" disabled>Payment</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn btn-info" onclick="window.location.href='/cashier_obtain_loan'" disabled>Apply Loan</button>
+                                <button class="btn btn" onclick="window.location.href='/cashier_obtain_loan'" >Apply Loan</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/cashier_view_customers'">Customers</button>
@@ -32,7 +32,7 @@
                             </div>
                         @endif
 
-                        @include('cashier.includes.loan_register_form')
+                        @include('cashier.includes.payment_form')
 
 
                     </div>

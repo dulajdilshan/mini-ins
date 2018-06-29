@@ -33,4 +33,9 @@ class CashierController extends Controller
         return view('cashier.cashier_guarantors');
     }
 
+    public function viewPayment()
+    {
+        return view('cashier.cashier_payment');
+    }
+
 }
