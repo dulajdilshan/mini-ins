@@ -27,8 +27,8 @@ Route::get('/admin_dash','AdminController@viewAdminDash');
 //Cashier controller
 Route::get('/cashier_dash','CashierController@viewDash');
 Route::get('/cashier_obtain_loan','CashierController@viewLoanObtainForm');
-Route::get('/cashier_customers','CashierController');
-Route::get('/cashier_guarantors','CashierController');
+Route::get('/cashier_customers','CashierController@viewDash');
+Route::get('/cashier_guarantors','CashierController@viewDash');
 
 //Other
 Route::get('/blocked',function (){
