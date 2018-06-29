@@ -23,6 +23,7 @@ class CreateGuarantorsTables extends Migration
             $table->string('contact_no');
             $table->text('address_1');
             $table->text('address_2');
+            $table->boolean('last_loan_settled');
             $table->timestamps();
         });
     }

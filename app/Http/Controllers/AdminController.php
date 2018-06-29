@@ -8,6 +8,6 @@ class AdminController extends Controller
 {
     public function viewAdminDash()
     {
-        return view('admin.branches_table');
+        return view('admin.dash');
     }
 }

@@ -7,13 +7,13 @@
 @section('header')
     {{--Header--}}
     <nav class="navbar navbar-transparent navbar-absolute">
-        @include('admin.includes.navbar')
+        @include('admin_.includes.navbar')
     </nav>
 @endsection
 
 @section('footer')
     {{--Footer--}}
     <footer class="footer">
-        @include('admin.includes.footer')
+        @include('admin_.includes.footer')
     </footer>
 @endsection

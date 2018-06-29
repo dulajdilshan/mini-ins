@@ -24,6 +24,7 @@ class CreateLoansTable extends Migration
             $table->unsignedInteger('remaining_weeks');
             $table->unsignedInteger('weekly_installment');
             $table->bigInteger('balance');
+            $table->unsignedInteger('guarantor_id');
             $table->dateTime('obtained_date');
             $table->dateTime('end_date');
             $table->boolean('done');

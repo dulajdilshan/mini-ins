@@ -11,13 +11,13 @@
                                 <a href="/cashier_dash">Dashboard</a>
                             </div>
                             <div class="col-md-3">
-                                <button onclick="window.location.href='/cashier_obtain_loan'">Obtain a Loan</button>
+                                <button class="btn" onclick="window.location.href='/cashier_obtain_loan'">Obtain a Loan</button>
                             </div>
                             <div class="col-md-3">
-                                <button onclick="window.location.href='/cashier_view_customers'">Customers</button>
+                                <button class="btn" onclick="window.location.href='/cashier_view_customers'">Customers</button>
                             </div>
                             <div class="col-md-3">
-                                <button onclick="window.location.href='/cashier_view_guarantors'">Guarantors</button>
+                                <button class="btn" onclick="window.location.href='/cashier_view_guarantors'">Guarantors</button>
                             </div>
                         </div>
                     </div>
