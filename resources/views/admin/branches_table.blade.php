@@ -26,10 +26,10 @@
                         <div class="card-content table-responsive">
                             <table class="table table-hover">
                                 <thead class="text-primary" style="color: slategrey">
-                                    <th>ID</th>
-                                    <th>Title</th>
+                                    <th>User Name</th>
+                                    <th>Email</th>
                                     {{--  <th>Description</th>  --}}
-                                    <th>Report created at</th>
+                                    <th>Role</th>
                                     <th>Progress</th>
                                     <th>Assigned Developer</th>
                                     <th></th>

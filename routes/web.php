@@ -18,3 +18,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// Admin Controller
+Route::get('/admin_dash','AdminController@viewAdminDash');
+
+
+//Cashier controller
+Route::get('/cashier_dash','CashierController@viewDash');
+Route::get('/cashier_obtain_loan','CashierController@viewLoanObtainForm');
+Route::get('/cashier_customers','CashierController');
+Route::get('/cashier_guarantors','CashierController');
+
+//Other
+Route::get('/blocked',function (){
+    return view('blocked');
+});
