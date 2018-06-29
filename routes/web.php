@@ -21,7 +21,8 @@ Route::get('/', 'HomeController@viewDash')->name('home');
 // Admin Controller
 Route::get('/admin_dash','AdminController@viewAdminDash');
 
-
+//Manager Controller
+Route::get('/manager_dash','ManagerController@viewDash');
 //Cashier controller
 Route::get('/cashier_dash','CashierController@viewDash');
 Route::get('/cashier_obtain_loan','CashierController@viewLoanObtainForm');
