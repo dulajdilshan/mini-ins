@@ -27,6 +27,7 @@ class CreateLoansTable extends Migration
             $table->unsignedInteger('guarantor_id');
             $table->dateTime('obtained_date');
             $table->dateTime('end_date');
+            $table->boolean('approved');
             $table->boolean('done');
             $table->timestamps();
         });
