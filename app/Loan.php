@@ -17,4 +17,9 @@ class Loan extends Model
     {
         return $this->belongsTo('App\Guarantor');
     }
+
+    public function payment()
+    {
+        return $this->hasMany('App\Payment');
+    }
 }

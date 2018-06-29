@@ -12,4 +12,9 @@ class Customer extends Model
     {
         return $this->hasMany('App\Loan');
     }
+
+    public function payment()
+    {
+        return $this->hasMany('App\Payment');
+    }
 }
