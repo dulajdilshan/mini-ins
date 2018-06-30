@@ -15,6 +15,10 @@ class CreateCentresTable extends Migration
     {
         Schema::create('centres', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('branch_id');
+            $table->string('branch_name');
+            $table->string('distance');
             $table->timestamps();
         });
     }

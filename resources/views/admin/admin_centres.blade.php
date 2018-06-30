@@ -44,4 +44,5 @@
             </div>
         </div>
     </div>
+    @include('admin.includes.add_cashier')
 @endsection
