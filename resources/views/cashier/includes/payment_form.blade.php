@@ -1,3 +1,15 @@
+{{--<input list="browsers" name="browser">--}}
+{{--<datalist id="browsers">--}}
+    {{--<option value="Internet Explorer">--}}
+    {{--<option value="Firefox">--}}
+    {{--<option value="Chrome">--}}
+    {{--<option value="Opera">--}}
+    {{--<option value="Safari">--}}
+{{--</datalist>--}}
+
+
+
+
 <div class="row">
     <div class="col-md-9 col-md-offset-1">
         {{--<h2>Loan Obtaining Form</h2>--}}
@@ -80,7 +92,7 @@
                 </div>
                 <div class="col-sm-3 form-group">
                     <label></label>
-                    <button class="btn btn-primary btn-rose">CAL</button>
+                    <button class="btn btn-primary">CAL</button>
                 </div>
             </div>
             <p>Remarks</p>
