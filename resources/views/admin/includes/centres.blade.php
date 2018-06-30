@@ -6,41 +6,38 @@
         <input type="text" id="myInput" onkeyup="myFunction()"/>
     </div>
     <div class="col-sm-3">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add customer</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Centre</button>
     </div>
 </div>
 <p></p><p></p>
 <table class="table table-hover">
     <thead>
     <tr>
-        <th>NIC</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>No.of Loans taken</th>
-        <th>Last Loan settled?</th>
+        <th>ID</th>
+        <th>Centre Name</th>
+        <th>Branch ID</th>
+        <th>Distance</th>
+
     </tr>
     </thead>
     <tbody id="myTable">
     <tr>
-        <td>951113247v</td>
-        <td>Smith</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>1</td>
+        <td>A</td>
+        <td>1</td>
+        <td>2<td>
     </tr>
     <tr>
-        <td>951113247v</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>2</td>
+        <td>B</td>
+        <td>1</td>
+        <td>2<td>
     </tr>
     <tr>
-        <td>951113247v</td>
-        <td>Kater</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>3</td>
+        <td>C</td>
+        <td>1</td>
+        <td>2<td>
     </tr>
     </tbody>
 </table>
@@ -53,7 +50,7 @@
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
+            td = tr[i].getElementsByTagName("td")[1];
             if (td) {
                 if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                     tr[i].style.display = "";

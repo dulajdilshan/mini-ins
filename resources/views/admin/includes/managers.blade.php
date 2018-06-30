@@ -6,41 +6,41 @@
         <input type="text" id="myInput" onkeyup="myFunction()"/>
     </div>
     <div class="col-sm-3">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add customer</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Manager</button>
     </div>
 </div>
 <p></p><p></p>
 <table class="table table-hover">
     <thead>
     <tr>
+        <th>User ID</th>
         <th>NIC</th>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>No.of Loans taken</th>
-        <th>Last Loan settled?</th>
+        <th>Email</th>
+        <th>Full name</th>
+        <th>Contact No</th>
     </tr>
     </thead>
     <tbody id="myTable">
     <tr>
+        <td>2</td>
         <td>951113247v</td>
-        <td>Smith</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>admin@mail.com</td>
+        <td>Smith Subasinghe</td>
+        <td>0112990887<td>
     </tr>
     <tr>
-        <td>951113247v</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>3</td>
+        <td>921113247v</td>
+        <td>admin@mail.com</td>
+        <td>Smith Subasinghe</td>
+        <td>0112990887<td>
     </tr>
     <tr>
-        <td>951113247v</td>
-        <td>Kater</td>
-        <td>Doe</td>
-        <td>4<td>
-        <td>NO</td>
+        <td>4</td>
+        <td>931113247v</td>
+        <td>admin@mail.com</td>
+        <td>Smith Subasinghe</td>
+        <td>0112990887<td>
     </tr>
     </tbody>
 </table>
@@ -53,7 +53,7 @@
         table = document.getElementById("myTable");
         tr = table.getElementsByTagName("tr");
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
+            td = tr[i].getElementsByTagName("td")[1];
             if (td) {
                 if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                     tr[i].style.display = "";

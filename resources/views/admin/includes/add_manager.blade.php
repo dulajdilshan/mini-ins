@@ -6,47 +6,33 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Add Customer</h4>
+                <h4 class="modal-title">Add Manager</h4>
             </div>
             <form action="" method="post">
                 <div class="modal-body">
 
                     <div class="row">
                         <div class="col-sm-2 form-group">
-                            <label for="customer_nic"> NIC</label>
+                            <label for="manager_nic"> NIC</label>
                             <input type="text" class="form-control" id="customer_nic" name="customer_nic" required="" maxlength="50">
                         </div>
                         <div class="col-sm-5 form-group">
-                            <label for="customer_name"> Name</label>
+                            <label for="manager_name"> Full Name</label>
                             <input type="text" class="form-control" id="customer_name" name="customer_name" required="" maxlength="50">
                         </div>
                         <div class="col-sm-3 form-group">
-                            <label for="customer_bday"> Birthday</label>
+                            <label for="user_id"> User ID</label>
                             <input type="text" class="form-control" id="customer_bday" name="customer_bday" required="" maxlength="50">
-                        </div>
-                        <div class="col-sm-2 form-group">
-                            <label for="customer_age"> Age</label>
-                            <input type="text" class="form-control" id="customer_age" name="customer_age" required="" maxlength="50">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-3 form-group">
-                            <label for="customer_gender"> Gender</label>
-                            <select class="form-control" name="customer_gender" id="customer_gender">
-                                <option class="form-control" value="male">Male</option>
-                                <option class="form-control" value="Female">Female</option>
-                            </select>
+                        <div class="col-sm-6 form-group">
+                            <label for="manager_email"> E-Mail</label>
+                            <input type="text" class="form-control" id="manager_email" name="manager_email" required="" maxlength="70">
                         </div>
                         <div class="col-sm-3 form-group">
-                            <label for="customer_married"> Married / Single</label>
-                            <select class="form-control" name="customer_married" id="customer_married">
-                                <option class="form-control" value="married">Married</option>
-                                <option class="form-control" value="single">Single</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-3 form-group">
-                            <label for="customer_contact1"> Phone no</label>
-                            <input type="text" class="form-control" id="customer_contact1" name="customer_contact1" required="" maxlength="50">
+                            <label for="contact_no"> Phone no</label>
+                            <input type="text" class="form-control" id="contact_no" name="contact_no" required="" maxlength="50">
                         </div>
                         <div class="col-sm-3 form-group">
                             <label for="customer_contact2"> Mobile no</label>
@@ -54,13 +40,9 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <label for="customer_address1"> Address 1</label>
-                            <input type="text" class="form-control" id="customer_address1" name="customer_address1" required="" maxlength="70">
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <label for="customer_address1"> Address 2</label>
-                            <input type="text" class="form-control" id="customer_address2" name="customer_address2" required="" maxlength="70">
+                        <div class="col-sm-7 form-group">
+                            <label for="manager_address"> Address</label>
+                            <input type="text" class="form-control" id="manager_address" name="manager_address" required="" maxlength="70">
                         </div>
                     </div>
                 </div>
