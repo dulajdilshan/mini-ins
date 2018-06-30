@@ -17,7 +17,7 @@
                                 <button class="btn" onclick="window.location.href='/manager_approve_loan_list'">Approve Loans</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/manager_edit_loan_list'">Edit Loans</button>
+                                <button class="btn btn-info" onclick="window.location.href='/manager_edit_loan_list'" disabled>Edit Loans</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/manager_view_customers'">Customers</button>
@@ -33,6 +33,8 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                            <button class="btn btn-warning"onclick="window.location.href='/manager_edit_loan_list'">Go Back</button>
+                        @include('loan.edit_loan')
                     </div>
                 </div>
             </div>

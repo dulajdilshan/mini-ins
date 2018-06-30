@@ -21,6 +21,6 @@ class AuthCashier
             return $next($request);
         }
 
-        return redirect('/blocked');
+        return redirect()->back();
     }
 }

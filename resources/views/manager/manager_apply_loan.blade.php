@@ -11,13 +11,13 @@
                                 <a href="/manager_dash">Dashboard</a>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/manager_obtain_loan'">Apply Loan</button>
+                                <button class="btn btn-info" onclick="window.location.href='/manager_obtain_loan'" disabled>Apply Loan</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/manager_approve_loan_list'">Approve Loans</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/manager_edit_loan_list'">Edit Loans</button>
+                                <button class="btn" onclick="window.location.href='/manager_edit_loans_list'">Edit Loans</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/manager_view_customers'">Customers</button>
@@ -33,6 +33,8 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+
+                        @include('manager.includes.loan_register_form')
                     </div>
                 </div>
             </div>

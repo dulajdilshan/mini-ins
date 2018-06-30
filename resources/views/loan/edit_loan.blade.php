@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-9 col-md-offset-1">
-        <h2>Loan Application Form</h2>
-        <form role="form" method="post" id="reused_form">
+        {{--<h2>Loan Obtaining Form</h2>--}}
+        <form role="form" method="post" id="reused_form" action="/manager_edit_loan/{{2123}}/update">
 
             {{--General Details--}}
             <p> General Information</p>
@@ -211,11 +211,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 form-group">
-                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btn_loan">Apply Loan</button>
+                <div class="col-sm-4 form-group">
+                    <button type="submit" class="btn btn-success btn-block" id="btn_loan_approve">Update Loan Data</button>
                 </div>
-                <div class="col-sm-6 form-group">
-                    <button type="reset" class="btn btn-lg btn-behance btn-block" id="btnContactUs">Reset</button>
+                <div class="col-sm-4 form-group">
+                    <button type="Reset" class="btn btn-danger btn-block" id="btn_loan_reject">Reset</button>
                 </div>
             </div>
         </form>

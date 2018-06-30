@@ -23,6 +23,14 @@ Route::get('/admin_dash','AdminController@viewAdminDash');
 
 //Manager Controller
 Route::get('/manager_dash','ManagerController@viewDash');
+Route::get('/manager_obtain_loan','ManagerController@viewApplyLoanForm');
+Route::get('/manager_approve_loan_list','ManagerController@viewApproveLoanList');
+Route::get('/manager_edit_loan_list','ManagerController@viewEditLoanList');
+Route::get('/manager_view_customers','ManagerController@viewCustomers');
+Route::get('/manager_view_guarantors','ManagerController@viewGuarantors');
+Route::get('/manager_approve_loan/{id}','ManagerController@viewApproveLoan');
+Route::get('/manager_edit_loan/{id}','ManagerController@viewEditLoan');
+
 
 //Cashier controller
 Route::get('/cashier_dash','CashierController@viewDash');

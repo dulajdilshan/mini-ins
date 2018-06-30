@@ -2,7 +2,9 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\AuthAdmin;
 use App\Http\Middleware\AuthCashier;
+use App\Http\Middleware\AuthManager;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -59,5 +61,7 @@ class Kernel extends HttpKernel
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'auth_cashier' => AuthCashier::class,
+        'auth_manager' => AuthManager::class,
+        'auth_admin' => AuthAdmin::class,
     ];
 }
