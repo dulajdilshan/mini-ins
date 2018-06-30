@@ -22,6 +22,12 @@ Route::get('/', 'HomeController@viewDash')->name('home');
 
 // Admin Controller
 Route::get('/admin_dash','AdminController@viewAdminDash');
+Route::get('/admin_loans','AdminController@viewAdminLoans');
+Route::get('/admin_branches','AdminController@viewAdminBranches');
+Route::get('/admin_centres','AdminController@viewAdminCentres');
+Route::get('/admin_customers','AdminController@viewAdminCustomers');
+Route::get('/admin_managers','AdminController@viewAdminManagers');
+Route::get('/admin_cashiers','AdminController@viewAdminCashiers');
 
 
 //Manager Controller

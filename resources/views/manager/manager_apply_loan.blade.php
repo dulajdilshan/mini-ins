@@ -3,13 +3,13 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-2">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="row">
-                            <div class="col-md-2">
-                                <a href="/manager_dash">Dashboard</a>
-                            </div>
+                            {{--<div class="col-md-2">--}}
+                                {{--<a href="/manager_dash">Dashboard</a>--}}
+                            {{--</div>--}}
                             <div class="col-md-2">
                                 <button class="btn btn-info" onclick="window.location.href='/manager_obtain_loan'" disabled>Apply Loan</button>
                             </div>
