@@ -7,8 +7,26 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="row">
-                            <div class="col-md-3">
-                                <a href="/admin_dash">Dashboard</a>
+                            {{--<div class="col-md-2">--}}
+                                {{--<a href="/Admin_dash">Dashboard</a>--}}
+                            {{--</div>--}}
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_loans'">Loans</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_branches'">Branches</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_centres'">Centres</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_customers'">Customers</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_managers'">Managers</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn" onclick="window.location.href='/admin_cashiers'">Cashiers</button>
                             </div>
                         </div>
                     </div>
