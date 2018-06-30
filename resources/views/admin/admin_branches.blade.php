@@ -14,7 +14,7 @@
                                 <button class="btn" onclick="window.location.href='/admin_loans'">Loans</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/admin_branches'">Branches</button>
+                                <button class="btn btn-info" onclick="window.location.href='/admin_branches'" disabled>Branches</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/admin_centres'">Centres</button>
@@ -38,7 +38,7 @@
                         @endif
 
 
-
+                        @include('admin.includes.branches')
                     </div>
                 </div>
             </div>

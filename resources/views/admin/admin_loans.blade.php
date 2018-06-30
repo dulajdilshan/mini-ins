@@ -11,7 +11,7 @@
                             {{--<a href="/Admin_dash">Dashboard</a>--}}
                             {{--</div>--}}
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/admin_loans'">Loans</button>
+                                <button class="btn btn-info" onclick="window.location.href='/admin_loans'" disabled>Loans</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/admin_branches'">Branches</button>
@@ -37,6 +37,7 @@
                             </div>
                         @endif
 
+                        @include('loan.loan_list')
 
 
                     </div>

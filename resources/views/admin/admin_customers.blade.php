@@ -20,7 +20,7 @@
                                 <button class="btn" onclick="window.location.href='/admin_centres'">Centres</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/admin_customers'">Customers</button>
+                                <button class="btn btn-info" onclick="window.location.href='/admin_customers'" disabled>Customers</button>
                             </div>
                             <div class="col-md-2">
                                 <button class="btn" onclick="window.location.href='/admin_managers'">Managers</button>
@@ -37,11 +37,12 @@
                             </div>
                         @endif
 
-
+                        @include('admin.includes.customers_table')
 
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    @include('manager.includes.add_customer')
 @endsection

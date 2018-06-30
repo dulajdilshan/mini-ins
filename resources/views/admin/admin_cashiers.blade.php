@@ -26,7 +26,7 @@
                                 <button class="btn" onclick="window.location.href='/admin_managers'">Managers</button>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn" onclick="window.location.href='/admin_cashiers'">Cashiers</button>
+                                <button class="btn btn-info" onclick="window.location.href='/admin_cashiers'" disabled>Cashiers</button>
                             </div>
                         </div>
                     </div>
@@ -38,7 +38,7 @@
                         @endif
 
 
-
+                            @include('admin.includes.cashiers')
                     </div>
                 </div>
             </div>
